@@ -1,2 +1,2 @@
-find -name "*.txt"
- basename ./mktemp/some/hierarchy/structure/foo.txt && basename ./mktemp/some/directory/files/bar.txt &&  basename ./mktemp/some/directory/baz.txt && sort
+basename -a $(find -type f -name "*.txt") | sort
+
